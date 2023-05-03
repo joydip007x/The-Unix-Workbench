@@ -1,4 +1,4 @@
-numOfFiles=$(ls | wc -l)
+numOfFiles=$(find $pwd -type f | wc -l)
 function guessVerify () {
 
    if [[ "$1" -eq "$numOfFiles" ]]
